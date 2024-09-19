@@ -1,0 +1,63 @@
+
+ 
+<!-- 
+  qual é o escopo do bloco no JavaScript? 
+  Escopo de bloco no JavaScript refere-se ao local onde as variáveis ​​existem e podem ser usadas.
+  O escopo do bloco é delimitado por `{ }`, que pode estar em estruturas como `if`, `for` ou simplesmente blocos de código isolados. 
+  Quando uma variável é declarada dentro de um bloco com `let` ou `const`,essa variável só existe dentro desse bloco. 
+  Fora dele, ela não pode ser acessada.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+     let nome = "João";  // "nome" só existe dentro deste bloco.
+     console.log(nome);  // Mostra "João".
+        }
+    //  console.log(nome);  // Erro: "nome" não existe fora do bloco.
+
+     {
+        var idade =25;
+        console.log(idade);
+     }
+
+
+    {
+     var idade = 25;  // "idade" foi criada com `var` dentro do bloco.
+    }
+     console.log(idade);  // Funciona e exibe "25", porque `var` ignora o bloco.
+
+//      if (condição) {
+//   // Código a ser executado se a condição for verdadeira
+//     }
+//      let idade = 18;
+
+//      if (idade >= 18) {
+//      console.log("Você é maior de idade.");
+//     }
+
+    // } else {
+     // Código a ser executado se a condição não for verdadeira
+     
+//   if (condição1) {
+//   Código a ser executado se condição1 for verdadeira
+//   } else if (condição2) {
+//   Código a ser executado se condição2 for verdadeira
+//   } else {
+//   Código a ser executado se nenhuma das condições anteriores for verdadeira
+//   }
+
+
+
+
+    </script>
+</body>
+</html>
+
+
